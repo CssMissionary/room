@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+<body>
+  <div class="top-section">
+              <div class="left-box" id="imgid">
+                  <header>
+                    <img src="./images/icon-hamburger.svg" alt="" class="hamburger">
+                    <a href="#"><img src="./images/logo.svg" alt="" class="logo"></a>
+                    <div class="navigation">
+                      <a href="#">home</a>
+                      <a href="#">shop</a>
+                      <a href="#">about</a>
+                      <a href="#">contact</a>
+                    </div>
+                  </header>
+              </div>
+              <div class="right-box">
+                <h1 id="change">Discover innovative ways to decorate</h1>
+                <p id="paragraph">We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love</p>
+  <button class="shop">SHOP NOW <img src="./images/icon-arrow.svg" alt=""></button>
+  <div class="slider-button">
+    <button class="left-button" onclick="revChange()"><img src="./images/icon-angle-left.svg" alt=""></button>
+    <button class="right-button" onclick="changeScr()"><img src="./images/icon-angle-right.svg" alt=""></button>
+  </div>
+              </div>
+  </div>
+  <div class="bottom-section">
+    <div class="left-corner"><img src="./images/image-about-dark.jpg" alt=""></div>
+    <div class="about">
+      <h3>ABOUT OUR FURNITURE</h3>
+      <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+  store locator. Any questions? Don't hesitate to contact us today.</p>
+    </div>
+    <div class="right-corner"><img src="./images/image-about-light.jpg" alt=""></div>
+  </div>
+    <div class="modal-container none">
+        <div class="modal">
+                <img src="images/icon-close.svg" alt="" class="shut">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+        </div>
+    </div>
+  <script src="app.js"></script>
+  </body>
+</html>

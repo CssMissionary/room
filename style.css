@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.top-section{
+    display: flex;
+}
+.logo{
+    margin-top: 10px;
+}
+.left-box{
+    min-width: 60%;
+    padding: 50px;
+    transition: .5s all ease;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 30px;
+}
+.navigation a:hover{
+    border-bottom: 1px solid white;
+}
+.right-box h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 40px;
+    padding: 20px 90px;
+    margin-top: 60px;
+}
+.about h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px 40px;
+    letter-spacing: 5px;
+}
+.right-box p, .about p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(182, 179, 179);
+    line-height: 24px;
+    padding: 0px 90px;
+}
+.about p{
+    padding: 0 30px;
+}
+.shop{
+    margin: 30px 90px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.shop:hover{
+    color: rgb(111, 106, 106);
+    transition: .2s all;
+}
+.slider-button .left-button, .right-button{
+    width: 73px;
+    height: 60px;
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+}
+.right-button{
+    margin-left: -5px;
+}
+.left-button:hover, .right-button:hover{
+    background-color: rgb(53, 52, 52);
+    transition: 0.2s all;
+}
+.bottom-section{
+    display: flex;
+}
+.hamburger{
+        display: none;
+    }
+.none{
+    display: none;
+}
+@media screen and (max-width: 480px){
+    body{
+        height: 100vh;
+    }
+        .modal-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .modal{
+            width: 100vw;
+            height: 13vh;
+            padding: 30px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            transition: 1s all ease;
+        }
+        .modal ul{
+            display: flex;
+            margin-left: auto;
+        }
+        .modal ul li{
+            list-style: none;
+        }
+        .modal ul a{
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        .modal ul a:hover{
+            color: rgb(111, 106, 106);
+        }
+        .shut{
+            cursor: pointer;
+        }
+    .hamburger{
+        display: flex;
+        margin-right: 30px;
+    }
+    .top-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-box{
+        min-width: none;
+        width: 100%;
+        background-size: cover;
+        height: 350px;
+    }
+    .navigation{
+        display: none;
+    }
+    .right-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .slider-button{
+        order: 1;
+        margin-left: auto;
+        margin-top: -60px;
+    }
+    #change{
+        order: 2;
+    }
+    #paragraph{
+        order: 3;
+    }
+    .shop{
+        order: 4;
+        margin: 20px 0;
+        margin-right: auto;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    .right-box h1{
+        padding: 0;
+        padding-left: 30px;
+    }
+    .right-box p{
+        padding: 0;
+        padding: 30px;
+    }
+    .bottom-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .about h3{
+        padding-left: 30px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .about p{
+        padding: 0;
+        padding: 30px;
+        padding-top: 10px;
+    }
+    .right-corner{
+        height: 400px;
+    }
+}
